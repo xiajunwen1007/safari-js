@@ -12,7 +12,7 @@
 var papers = document.querySelectorAll('.gs_ri');
 papers.forEach(function(item){
 	var paper_link = "https://sci-hub.se/" + item.querySelector('.gs_rt a').href;
-	var down_but = `<a target="_blank" href="${paper_link}" style= "color:rgb(26, 13, 171); font-weight: bold;">download</a>`;
+	var down_but = `<a target="_blank" href="${paper_link}" style= "color: rgb(26, 13, 171); font-weight: bold;">download</a>`;
 	item.querySelector('.gs_ri .gs_fl').insertAdjacentHTML('beforeend', down_but);
 });
 })();
